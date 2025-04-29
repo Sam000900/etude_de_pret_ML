@@ -5,11 +5,14 @@ import requests
 import streamlit as st
 
 
+# Trouve le chemin du répertoire où se trouve ce script
+current_dir = os.path.dirname(__file__)
 
-# Chemin absolu vers le fichier CSV dans le même dossier que ce script
-csv_path = os.path.join(os.path.dirname(__file__), "application_train.csv")
-data = pd.read_csv(csv_path)
+# Crée le chemin vers le fichier CSV dans le même répertoire
+data_path = os.path.join(current_dir, 'application_train.csv')
 
+# Charger les données
+data = pd.read_csv(data_path)
 
 
 
