@@ -5,8 +5,8 @@ import requests
 import streamlit as st
 
 
-root_dir = os.path.dirname(__file__)
-data_path = os.path.join(root_dir, "..", "Data", "application_train.csv")
+data = pd.read_csv("application_train.csv")
+
 
 
 
