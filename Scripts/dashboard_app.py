@@ -4,14 +4,20 @@ import joblib
 import requests
 import streamlit as st
 
+
+root_dir = os.path.dirname(__file__)
+data_path = os.path.join(root_dir, "..", "Data", "application_train.csv")
+
+
+
 # 1. Détermine le dossier où est ce script (Scripts/)
-current_dir = os.path.dirname(__file__)  
+#current_dir = os.path.dirname(__file__)  
 
 # 2. Remonte d’un niveau pour arriver à la racine du repo (dashboard_pret_ml/)
-root_dir = os.path.dirname(current_dir)
+#root_dir = os.path.dirname(current_dir)
 
 # 3. Construis le chemin vers ton fichier CSV dans Data/
-data_path = os.path.join(root_dir, "Data", "application_train.csv")
+#data_path = os.path.join(root_dir, "Data", "application_train.csv")
 
 headers = {
     "ML-api-key": "super-secret-API-key"
