@@ -5,7 +5,11 @@ import requests
 import streamlit as st
 
 
-data = pd.read_csv("application_train.csv")
+
+# Chemin absolu vers le fichier CSV dans le même dossier que ce script
+csv_path = os.path.join(os.path.dirname(__file__), "application_train.csv")
+data = pd.read_csv(csv_path)
+
 
 
 
@@ -25,7 +29,7 @@ headers = {
 
 # 4. Charge les données
 st.title("Tableau de bord d'éligibilité au prêt - Néo Banque")
-data = pd.read_csv(data_path)
+#data = pd.read_csv(data_path)
 
 
 # Calcul de l'âge
