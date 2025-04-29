@@ -1,6 +1,7 @@
 .env
 /.vscode
 /Data/application_test.csv
+/Data/application_train2.csv
 /Data/bureau_balance.csv
 /Data/bureau.csv
 /Data/credit_card_balance.csv
