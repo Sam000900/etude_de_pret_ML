@@ -1,4 +1,13 @@
 .env
 /.vscode
-/Data
+/Data/application_test.csv
+/Data/bureau_balance.csv
+/Data/bureau.csv
+/Data/credit_card_balance.csv
+/Data/HomeCredit_columns_description.csv
+/Data/installments_payments.csv
+/Data/POS_CASH_balance.csv
+/Data/previous_application.csv
+/Data/sample_submission.csv
+
 
